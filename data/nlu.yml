@@ -1,0 +1,267 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Mwaramutse 
+    - Mwiriwe
+    - Uraho
+    - Amahoro
+    - Yambu
+    - Muraho 
+
+
+- intent: goodbye
+  examples: |
+    - N’agasaga
+    - Murabeho
+    - Gira ibihe vyiza
+
+
+- intent: affirm
+  examples: |
+    - Ego
+    - Ehe
+    - Ego cane
+    - Yego
+    - Ndavyemera
+    - Ndabishobora
+    - Nivyo
+
+- intent: deny
+  examples: |
+    - Oya
+    - Sivyo
+    - Sindi 
+    - Sinshobora
+    - Ntivyoroshe -
+    
+
+- intent: mood_great
+  examples: |
+    - Umunezero
+    - Akanyamuneza
+    - Gushimishwa
+    - Kunezerwa
+    - Kunezerwa
+    - Kugira ibihe vyiza
+    - Kugira akanyamuneza 
+    - Guhimbaza
+
+- intent: mood_unhappy
+  examples: |
+    - Kubabara
+    - Guhangayika
+    - Agahinda
+    - Agahinda
+    - Kwihebura 
+    - Kwihebura 
+    - Kuganya
+
+
+- intent: bot_challenge
+  examples: |
+    - Uri ikintu c’ikoranabuhanga
+    - Uri umuntu?
+    - Ndi kuvugana n’ikintu c’ikoranabuhanga?
+    - Ndi kuvugana n’umuntu?
+
+- intent: translate_sentence
+  examples: |
+    - She is very caring.
+    - She loves her job.
+    - She enjoys learning new things.
+    - She is very generous.
+    - She loves to read.
+    - She enjoys knitting.
+    - She is very brave.
+    - She loves to dance.
+    - She enjoys photography.
+    - She is very artistic.
+    - She loves to cook for her family.
+    - She enjoys spending time with her children.
+    - She is very supportive.
+    - She loves to travel.
+    - She enjoys making new friends.
+    - She is very disciplined.
+    - She loves her family.
+    - She enjoys painting.
+    - She is very creative.
+    - She loves spending time with her friends.
+    - She enjoys cooking.
+    - She loves her children.
+    - She enjoys reading novels.
+    - She is very responsible.
+    - She loves to cook for her family.
+    - She enjoys going to the gym.
+    - She is very caring.
+    - She loves to help others.
+    - She enjoys making new friends.
+    - She is very disciplined.
+    - She loves spending time with her family.
+    - She enjoys traveling.
+    - She is very organized.
+    - She loves to draw.
+    - She enjoys hiking.
+    - She is very supportive.
+    - She loves to read.
+    - She enjoys swimming.
+    - She is very thoughtful.
+    - She loves her family.
+    - She enjoys painting.
+    - She is very talented.
+    - She loves to cook.
+    - She enjoys writing.
+    - She is very polite.
+    - She loves spending time with her friends.
+    - She enjoys making crafts.
+    - She enjoys painting.
+    - She is very thoughtful.
+    - She loves to dance.
+    - She enjoys reading.
+    - She is very kind-hearted.
+    - She loves spending time with her children.
+    - She enjoys swimming.
+    - She is very brave.
+    - She loves to help people.
+    - She enjoys making friends.
+    - She is very disciplined.
+    - She loves her family.
+    - She enjoys traveling.
+    - She is very creative.
+    - She loves to cook.
+    - She enjoys hiking.
+    - She is very punctual.
+    - She loves to draw.
+    - She enjoys playing sports.
+    - She is very supportive.
+    - She loves reading books.
+    - She enjoys knitting.
+    - She is very generous.
+    - She loves her job.
+    - She enjoys learning new things.
+    - She is very talented.
+    - She loves to teach.
+    - She enjoys writing stories.
+    - She is very kind.
+    - She loves to dance.
+    - She enjoys making crafts.
+    - She is very artistic.
+    - She likes to knit.
+    - She loves spending time with her friends.
+    - She is a caring mother.
+    - She enjoys cooking.
+    - She is very hardworking.
+    - She loves to read.
+    - She is very organized.
+    - She enjoys making new friends.
+    - She is a supportive wife.
+    - She likes to write.
+    - She is very polite.
+    - She loves gardening.
+    - She enjoys playing the piano.
+    - She is a good role model.
+    - She loves to dance.
+    - She enjoys photography.
+    - She is very artistic.
+    - She loves to read novels.
+    - She enjoys going to the gym.
+    - She is very generous.
+    - She loves spending time with her family.
+    - She enjoys knitting.
+    - She is very determined.
+    - She loves to help others.
+    - She enjoys learning new things.
+    - She is a dedicated student.
+    - She loves to cook for her family.
+    - She is very responsible.
+    - She enjoys making crafts.
+    - She loves to teach.
+    - She is very talented.
+    - She enjoys baking cakes.
+    - She loves to write.
+    - She is very athletic.
+    - She works as a teacher.
+    - She has a passion for cooking.
+    - She is a good leader.
+    - She sings in the church choir.
+    - She is very intelligent.
+    - She loves reading novels.
+    - She is a successful entrepreneur.
+    - She enjoys gardening.
+    - She takes care of her family.
+    - She is learning how to sew.
+    - She loves to travel.
+    - She volunteers at a local shelter.
+    - She is a skilled musician.
+    - She is dedicated to her job.
+    - She is always punctual.
+    - She has a beautiful voice.
+    - She is very creative.
+    - She loves animals.
+    - She writes poetry.
+    - She is very athletic.
+    - She is a loving mother.
+    - She enjoys baking cakes.
+    - She is an excellent cook.
+    - She is learning a new language.
+    - She takes care of her health.
+    - She is very organized.
+    - She has a warm personality.
+    - She loves to knit.
+    - She is a good friend.
+    - She is very responsible.
+    - She enjoys hiking.
+    - She is a dedicated student.
+    - She is a supportive sister.
+    - She likes to play the piano.
+    - She is very generous.
+    - She enjoys spending time with her family.
+    - She is a creative writer.
+    - She loves to dance.
+    - She is very fashionable.
+    - She enjoys photography.
+    - She is very patient.
+    - She loves to draw.
+    - She is a great cook.
+    - She is a good listener.
+    - She loves her job.
+    - She is a dedicated wife.
+    - She enjoys going to the gym.
+    - She is very respectful.
+    - She likes to play the guitar.
+    - She is very supportive.
+    - She loves to read.
+    - She is very brave.
+    - She enjoys learning new things.
+    - She is a caring daughter.
+    - She loves to cook for her family.
+    - She is very thoughtful.
+    - She enjoys writing stories.
+    - She is a loving wife.
+    - She likes to run.
+    - She is very talented.
+    - She loves to help people.
+    - She enjoys making crafts.
+    - She is a skilled baker.
+    - She loves to watch movies.
+    - She is very disciplined.
+    - She likes to play sports.
+    - She is a loving sister.
+    - She enjoys swimming.
+    - She is very determined.
+    - She loves to teach.
+    - She is very kind.
+    - She enjoys shopping.
+    - She is a supportive mother.
+    - She likes to read books.
+    - She is very creative.
+    - She loves her children.
+    - She enjoys hiking.
+    - She is very punctual.
+    - She loves to draw.
+    - She is very supportive.
+    - She enjoys traveling.
+    - She is very reliable.
+    
+       

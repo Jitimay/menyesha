@@ -1,0 +1,301 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - translate_sentence
+
+responses:
+  utter_greet:
+    - text: "Murakomeye?"
+
+  utter_cheer_up:
+    - text: "Nobafasha iki mugenzi?"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Ivyo ndabahaye vyabafashije ?"
+
+  utter_happy:
+    - text: "Vyiza cane!"
+
+  utter_goodbye:
+    - text: "N'akagaruka"
+
+  utter_iamabot:
+    - text: "N'amahoro, nitwa Menyesha."
+
+  utter_translate_sentence:
+    - text: "Ni umunyabuntu cane."
+    - text: "Akunda akazi kiwe."
+
+nlu:
+  - intent: greet
+    examples: |
+      - Mwaramutse 
+      - Mwiriwe
+      - Uraho
+      - Amahoro
+      - Yambu
+      - Muraho 
+
+  - intent: goodbye
+    examples: |
+      - N’agasaga
+      - Murabeho
+      - Gira ibihe vyiza
+
+  - intent: affirm
+    examples: |
+      - Ego
+      - Ehe
+      - Ego cane
+      - Yego
+      - Ndavyemera
+      - Ndabishobora
+      - Nivyo
+
+  - intent: deny
+    examples: |
+      - Oya
+      - Sivyo
+      - Sindi 
+      - Sinshobora
+      - Ntivyoroshe
+
+  - intent: mood_great
+    examples: |
+      - Umunezero
+      - Akanyamuneza
+      - Gushimishwa
+      - Kunezerwa
+      - Kunezerwa
+      - Kugira ibihe vyiza
+      - Kugira akanyamuneza 
+      - Guhimbaza
+
+  - intent: mood_unhappy
+    examples: |
+      - Kubabara
+      - Guhangayika
+      - Agahinda
+      - Agahinda
+      - Kwihebura 
+      - Kwihebura 
+      - Kuganya
+
+  - intent: bot_challenge
+    examples: |
+      - Uri ikintu c’ikoranabuhanga
+      - Uri umuntu?
+      - Ndi kuvugana n’ikintu c’ikoranabuhanga?
+      - Ndi kuvugana n’umuntu?
+
+  - intent: translate_sentence
+    examples: |
+      - text: "Ni umunyabuntu cane."
+      - text: "Akunda akazi kiwe."
+      - text: "Akunda kwiga ibintu bishasha."
+      - text: "Ni umuntu atanga cane."
+      - text: "Akunda gusoma."
+      - text: "Akunda kudoda."
+      - text: "Ni umwiyemezi."
+      - text: "Akunda kubina."
+      - text: "Akunda gufotora."
+      - text: "Ni umunyamwuga mu vy'ubuhinga."
+      - text: "Akunda gutekera umuryango wiwe."
+      - text: "Akunda kumarana umwanya n'abana biwe."
+      - text: "Afasha cane."
+      - text: "Akunda kuja mu bindi bihugu."
+      - text: "Akunda gukora abagenzi bashasha."
+      - text: "Ni umuntu akurikiza amategeko."
+      - text: "Akunda cane umuryango wiwe."
+      - text: "Akunda gushushanya."
+      - text: "Arashoboye cane mu kwihangira."
+      - text: "Akunda kumarana umwanya n'abagenzi biwe."
+      - text: "Akunda guteka."
+      - text: "Akunda cane abana biwe."
+      - text: "Akunda gusoma inkuru ndende."
+      - text: "Ni umuntu akwiye."
+      - text: "Akunda gutekera umuryango wiwe."
+      - text: "Akunda kuja mu kibanza co kwinonora."
+      - text: "Ni umunyabuntu cane."
+      - text: "Akunda gufasha abandi."
+      - text: "Akunda gukora abagenzi bashasha."
+      - text: "Ni umuntu akurikiza amategeko."
+      - text: "Akunda kumarana umwanya n'umuryango wiwe."
+      - text: "Akunda kuja mu bindi bihugu."
+      - text: "Ni umuntu ashimikiro cane."
+      - text: "Akunda gushushanya."
+      - text: "Akunda gukora ingendo ku misozi."
+      - text: "Afasha cane."
+      - text: "Akunda gusoma."
+      - text: "Akunda koga."
+      - text: "Ni umuntu azirikana cane."
+      - text: "Akunda cane umuryango wiwe."
+      - text: "Akunda gushushanya."
+      - text: "Afise ingabire nyinshi."
+      - text: "Akunda guteka."
+      - text: "Akunda kwandika."
+      - text: "Ni umwubaha."
+      - text: "Akunda kumarana umwanya n'abagenzi biwe."
+      - text: "Akunda gukora ibikorwa vy'ubuhinga."
+      - text: "Akunda gushushanya."
+      - text: "Ni umuntu azirikana cane."
+      - text: "Akunda kubina."
+      - text: "Akunda gusoma."
+      - text: "Afise umutima mwiza."
+      - text: "Akunda kumarana umwanya n'abana biwe."
+      - text: "Akunda koga."
+      - text: "Ni umwiyemezi."
+      - text: "Akunda gufasha abantu."
+      - text: "Akunda gukora abagenzi."
+      - text: "Ni umuntu akurikiza amategeko."
+      - text: "Akunda cane umuryango wiwe."
+      - text: "Akunda kuja mu bindi bihugu."
+      - text: "Arashoboye cane mu kwihangira."
+      - text: "Akunda guteka."
+      - text: "Akunda gukora ingendo ku misozi."
+      - text: "Arubahiriza igihe."
+      - text: "Akunda gushushanya."
+      - text: "Akunda gukina inkino."
+      - text: "Afasha cane."
+      - text: "Akunda gusoma ibitabo."
+      - text: "Akunda kudoda."
+      - text: "Ni umuntu atanga cane."
+      - text: "Akunda akazi kiwe."
+      - text: "Akunda kwiga ibintu bishasha."
+      - text: "Afise ingabire nyinshi."
+      - text: "Akunda kwigisha."
+      - text: "Akunda kwandika inkuru."
+      - text: "Ni umunyabuntu."
+      - text: "Akunda kubina."
+      - text: "Akunda gukora ibikorwa vy'ubuhinga."
+      - text: "Ni umunyamwuga mu vy'ubuhinga."
+      - text: "Akunda kudoda."
+      - text: "Akunda kumarana umwanya n'abagenzi biwe."
+      - text: "Ni umuvyeyi abeshejeho abana biwe."
+      - text: "Akunda guteka."
+      - text: "Akora cane."
+      - text: "Akunda gusoma."
+      - text: "Ni umuntu ashimikiro cane."
+      - text: "Akunda gukora abagenzi bashasha."
+      - text: "Afasha umugabo wiwe cane."
+      - text: "Akunda kwandika."
+      - text: "Ni umwubaha."
+      - text: "Akunda gukora ubusitani."
+      - text: "Akunda gukina ipiyano."
+      - text: "Ni akarorero keza."
+      - text: "Akunda kubina."
+      - text: "Akunda gufotora."
+      - text: "Ni umunyamwuga mu vy'ubuhinga."
+      - text: "Akunda gusoma inkuru ndende."
+      - text: "Akunda kuja mu kibanza co kwinonora."
+      - text: "Ni umuntu atanga cane."
+      - text: "Akunda kumarana umwanya n'umuryango wiwe."
+      - text: "Akunda kudoda."
+      - text: "Afise intumbero."
+      - text: "Akunda gufasha abandi."
+      - text: "Akunda kwiga ibintu bishasha."
+      - text: "Yiyeguriye kwiga."
+      - text: "Akunda gutekera umuryango wiwe."
+      - text: "Ni umuntu akwiye."
+      - text: "Akunda gukora ibikorwa vy'ubuhinga."
+      - text: "Akunda kwigisha."
+      - text: "Afise ingabire nyinshi."
+      - text: "Akunda guteka amakeke."
+      - text: "Akunda kwandika."
+      - text: "Akora nk'umwigisha."
+      - text: "Akunda cane guteka."
+      - text: "Ni umuyobozi mwiza."
+      - text: "Aririmba mu rusengero."
+      - text: "Ni umunyabwenge cane."
+      - text: "Akunda gusoma inkuru ndende."
+      - text: "Ni umucuruzi ashoboye."
+      - text: "Akunda gukora ubusitani."
+      - text: "Arabungabunga umuryango wiwe."
+      - text: "Ariko ariga kudoda."
+      - text: "Akunda kuja mu bindi bihugu."
+      - text: "Akora imirimo y'ubushake mu kibanza c'abantu bakeneye ubufasha."
+      - text: "Ni umunyamwuga mu gukina ibicurarangisho."
+      - text: "Yiyeguriye akazi kiwe."
+      - text: "Arubahiriza igihe."
+      - text: "Afise ijwi ryiza."
+      - text: "Arashoboye cane mu kwihangira."
+      - text: "Akunda ibikoko."
+      - text: "Yandika amazina y'ubuhizi."
+      - text: "Ni umushoboye mu nkino."
+      - text: "Ni umuvyeyi akunda abana biwe."
+      - text: "Akunda guteka amakeke."
+      - text: "Ni umufundi mwiza mu guteka."
+      - text: "Ariko ariga ururimi rushasha."
+      - text: "Arabungabunga amagara yiwe."
+      - text: "Ni umuntu ashimikiro cane."
+      - text: "Afise kamere nziza."
+      - text: "Akunda kudoda."
+      - text: "Ni umugenzi mwiza."
+      - text: "Ni umuntu akwiye."
+      - text: "Akunda gukora ingendo ku misozi."
+      - text: "Yiyeguriye kwiga."
+      - text: "Ni mwene wabo abeshejeho abandi."
+      - text: "Akunda gukina ipiyano."
+      - text: "Ni umuntu atanga cane."
+      - text: "Akunda kumarana umwanya n'umuryango wiwe."
+      - text: "Ni umwanditsi ashimikiro."
+      - text: "Akunda kubina."
+      - text: "Ni umuntu akunda ibigezweho."
+      - text: "Akunda gufotora."
+      - text: "Ni umunyabwitonzi."
+      - text: "Akunda gushushanya."
+      - text: "Ni umufundi mwiza mu guteka."
+      - text: "Ni umuntu yitondera kuvugwa."
+      - text: "Akunda akazi kiwe."
+      - text: "Yiyeguriye umugabo wiwe."
+      - text: "Akunda kuja mu kibanza co kwinonora."
+      - text: "Ni umwubaha."
+      - text: "Akunda gukina gitari."
+      - text: "Afasha cane."
+      - text: "Akunda gusoma."
+      - text: "Ni umwiyemezi."
+      - text: "Akunda kwiga ibintu bishasha."
+      - text: "Ni umukobwa abeshejeho abavyeyi biwe."
+      - text: "Akunda gutekera umuryango wiwe."
+      - text: "Ni umuntu azirikana cane."
+      - text: "Akunda kwandika inkuru."
+      - text: "Ni umugore akunda umugabo wiwe."
+      - text: "Akunda kwiruka."
+      - text: "Afise ingabire nyinshi."
+      - text: "Akunda gufasha abantu."
+      - text: "Akunda gukora ibikorwa vy'ubuhinga."
+      - text: "Ni umufundi mwiza mu gukora amakeke."
+      - text: "Akunda kuraba amafilimi."
+      - text: "Ni umuntu akurikiza amategeko."
+      - text: "Akunda gukina inkino."
+      - text: "Ni mwene wabo akunda."
+      - text: "Akunda koga."
+      - text: "Afise intumbero."
+      - text: "Akunda kwigisha."
+      - text: "Ni umunyabuntu."
+      - text: "Akunda kugura ibintu."
+      - text: "Ni umuvyeyi afasha abana biwe."
+      - text: "Akunda gusoma ibitabo."
+      - text: "Arashoboye cane mu kwihangira."
+      - text: "Akunda cane abana biwe."
+      - text: "Akunda gukora ingendo ku misozi."
+      - text: "Arubahiriza igihe."
+      - text: "Akunda gushushanya."
+      - text: "Afasha cane."
+      - text: "Akunda kuja mu bindi bihugu."
+      - text: "Ni umwizerwa."
+
+
+actions:
+  - utter_translate
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
